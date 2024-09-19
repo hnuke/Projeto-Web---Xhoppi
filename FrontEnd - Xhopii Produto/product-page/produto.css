@@ -51,11 +51,18 @@ nav .menu-nav ul li{
 nav .menu-nav ul li:hover{
     background-color: rgb(255,255,255);
 }
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
 .produto-interface{
     margin: 100px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: start;
+    width: min-content;
 }
 .produto-interface .produto-lista-imagens{
     display: flex;
