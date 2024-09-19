@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="produto.css">
+    <title> Xhopii - </title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <section class = "header">
+            <img src="img/icone.png"> <h1>Xhopii</h1>
+        </section>
+    </header>
+    <nav>
+        <section class ="menu-nav">
+            <ul>
+                <li>Home</li>
+                <li>Cadastro Cliente</li>
+                <li>Ver Cliente</li>
+            </ul>
+        </section>
+    </nav>
+    <section class = "produto-interface">
+        <section class = "produto-lista-imagens">
+            <ul>
+                <li><img src = "img/produto1.png" onclick="selecionarIMGProdutos(this)"></li>
+                <li><img src = "img/produto2.png" onclick="selecionarIMGProdutos(this)"></li>
+                <li><img src = "img/produto3.png" onclick="selecionarIMGProdutos(this)"></li>
+                <li><img src = "img/produto4.png" onclick="selecionarIMGProdutos(this)"></li>
+                <li><img src = "img/produto5.png" onclick="selecionarIMGProdutos(this)"></li>
+            </ul>
+
+        </section>
+        <section class = "produto-imagem-grande">
+            <img id="imgPrincipal" src = "img/produto1.png">
+        </section>
+        <section class = "produto-informacao">
+            <h1>Camisa Desenvolvedor Front-End CSS</h1>
+            <h1 id="precoProduto" class = "preco">R$56,90</h1>
+            <p id="qtdDisponivel" >171 peças disponíveis</p>
+            <p>Modelos: </p>
+            <ul class = "modelos">
+                <li onclick="mudarPreco(this)">Preto</li>
+                <li onclick="mudarPreco(this)">Azul</li>
+                <li onclick="mudarPreco(this)">Verde</li>
+                <li onclick="mudarPreco(this)">Cinza</li>
+                <li onclick="mudarPreco(this)">Rosa</li>
+            </ul>
+            <p>Tamanhos: </p>
+            <ul class = "tamanhos">
+                <li>P</li>
+                <li>M</li>
+                <li>G</li>
+                <li>GG</li>
+            </ul>
+            <p> Tamanho Selecionado: P</p>
+
+            <button class = "button-comprar-agora"> Comprar Agora </button>
+        </section>
+
+    </section>
+
+</body>
+</html>
