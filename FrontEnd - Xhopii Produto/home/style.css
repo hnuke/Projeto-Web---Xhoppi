@@ -4,10 +4,8 @@
     list-style: none;
     padding: 0;
 }
-
 a{
     color:inherit;
-    text-decoration: none;
 }
 
 a:hover{
@@ -61,13 +59,15 @@ nav .menu-nav ul {
     height: inherit;
     color: rgb(227,100,60);
     padding: 0;
+    margin: 0;
     
 }
 
 nav .menu-nav ul li{
     text-align: center;
     padding: 10px;
-    color: rgb(255,255,255)
+    color: rgb(255,255,255);
+    text-decoration: none;
     }
 
 nav .menu-nav ul li:hover{
@@ -85,155 +85,133 @@ main {
 /* BODY/MAIN */
 
 main {
-    background-color: rgb(195, 195, 195);
     display: flex;
     justify-content: center;
 }
 
-
-#popup-login {
-    padding: 0 150px 45px 150px;
-    margin: 40px 0 40px 0;
-    background-color: rgb(255,255,255);
+.carousel-inner img{
     width: 500px;
-    height: 1000px;
-    border-radius: 10px;
+    height: 500px;
+}
+
+.carousel-item {
+    width: 800px;
+    height: 500px;
+}
+
+#popup-home {
+    padding: 0 20px 45px 20px;
+    margin: 40px 40px 0 40px;
+    background-color: rgb(255,255,255);
+    width: fit-content;
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+
 }
 
-form{
-    display: flex;
-    flex-direction: column;
+#popup-home h3 {
+    margin: 10px 0 10px 0;
+    color: rgb(227,100,60)
+}
+
+.container-grid{
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto;
     width: 100%;
-    justify-content: space-evenly;
-    align-items: start;
     height: 100%;
 }
 
-form h3{
-    font-size: x-large;
-    color: rgb(251, 125, 92);
-}
 
-input, #button-entre{
-    height: 50px;
-    width: 100%;
-}
-
-input {
-    font-size:medium;
-    border: 1px solid rgba(0,0,0,0.1);
-    text-indent: 20px;
-}
-
-#button-cadastrar {
-    background-color: rgb(225,96,61);
-    color: rgb(255,255,255);
-
-    font-size: large;
-    border: 0;
-    width: 100%;
-    height: 50px;
-}
-
-#link-login {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-#popup-login hr {
-    border: 1px solid rgb(235,235,235);
-    width: 100%;
-    height: 0;
-
-}
-
-.hr-ou {
-    margin: 20px 0 0 0;
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.hr-ou p {
-    margin: 0 5px 0 5px;
-    color: rgb(205,205,205);
-}
-
-main .list-buttons{
-    margin: 25px 0 0 0;
-    width: 100%;
-}
-
-ul{
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-}
-
-
-ul li button{
-    border: 1px solid rgb(205,205,205);
-    background-color: rgb(255,255,255);    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 125px;
-    padding: 5px 10px 5px 10px;
-}
-ul li img {
-    width: 30px;
-    height: 30px;
-}
-
-p {
-    color: rgb(205,205,205);
-}
-
-#p-cadastrar{
-    margin-left: 5px;
-    color: rgb(225,96,61);
-}
-
-#novo-xhopii{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-}
-
-.selecionar-foto {
-    margin-top: 30px;
-    width: 100%;
+.produto {
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    height: 200px;
-}
-#foto{
-    border: 0px;
+    justify-content: space-between;
+    width: 150px;
+    height: 130px;
+    box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.2);
+    border: 1px solid rgba(251, 119, 48,0);
 }
 
-#foto::file-selector-button{
-    background-color: rgb(255,255,255);
-    color:rgb(251, 119, 48);
-    border: 1px solid rgb(251, 119, 48);
-    padding: 10px;
-    border-radius: 10px;
-    margin-left: 25px;
-    margin-right: 25px;
+.produto:hover{
+    border: 1px solid rgba(251, 119, 48,1);
+}
+.produto img{
+    width: 100%;
+    height: 80px;
+}
+
+.info {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.produto .info .descricao{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: justify;
+
+}
+
+.preco-unidade{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.produto h5{
+    font-size: xx-small;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: xx-small;
+    margin-right: 5px;
+}
+
+.transparent{
+    color: rgba(0,0,0,0.2);
+    font-size: xx-small;
+    width: 125px;
+}
+
+.transparente{
+    color: rgba(0,0,0,0.2);
+    font-size: xx-small;
+
+}
+.preco{
+    color: rgb(227,100,60);
+    font-size: xx-small;
+
+}
+
+hr {
+    width: 100%;
+    border: 1px solid rgb(227,100,60)
+}
+
+#popup-home figure img{
+    width: 800px;
+    height: 80px;
+    margin-top: 40px;
 }
 
 /* FOOTER */
 
 footer{
+    margin-top: 250px;
     background-color: rgb(235,235,235);
     display: flex;
     flex-direction: column;
@@ -278,7 +256,7 @@ footer ul li{
 
 #footer .pagamento img{
     width: 40px;
-    height: 30px;
+    height: 50px;
     padding: 12px 12px 12px 0px;
 }
 
@@ -298,5 +276,6 @@ hr {
     width: 80%;
     margin-bottom: 20px;
 }
+
 
 

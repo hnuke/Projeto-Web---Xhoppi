@@ -5,6 +5,16 @@
     padding: 0;
 }
 
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+
 header{
     background-color: rgb(225,96,61);
     display: flex;
@@ -169,6 +179,75 @@ main {
     color: rgb(227,100,60);
     font-size: xx-small;
 
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(235,235,235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+footer #footer {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: stretch;
+    height: 300px;
+}
+
+footer ul li{
+    margin-top:10px;
+}
+
+#footer ul h4{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.pagamento{
+    display: inline;
+}
+.pagamento section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 200px;
+}
+
+#footer .pagamento img{
+    width: 40px;
+    height: 30px;
+    padding: 12px 12px 12px 0px;
+}
+
+#footer  #plataformas .plataforma{
+    width: 100px;
+    height: 50px;
+
+}
+
+#footer #plataformas .qrcode {
+    width: 100px;
+    height: 100px;
+}
+
+hr {
+    border: 1px solid rgb(200,200,200);
+    width: 80%;
+    margin-bottom: 20px;
 }
 
 
