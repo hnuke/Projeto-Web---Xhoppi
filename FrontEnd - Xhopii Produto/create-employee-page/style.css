@@ -81,12 +81,12 @@ main {
 }
 
 
-#popup-login {
+#popup-func {
     padding: 0 150px 45px 150px;
     margin: 40px 0 40px 0;
     background-color: rgb(255,255,255);
     width: 500px;
-    height: 1000px;
+    height: 1150px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -128,13 +128,7 @@ input {
     height: 50px;
 }
 
-#link-login {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-#popup-login hr {
+#popup-func hr {
     border: 1px solid rgb(235,235,235);
     width: 100%;
     height: 0;
